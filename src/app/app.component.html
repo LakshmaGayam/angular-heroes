@@ -1,0 +1,12 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<li *ngFor="let he of Hero " (click)="onPress(he)">
+<h1>{{he.id}}  {{he.name}}</h1></li>
+
+
+<div *ngIf="selectedHero">
+<h2>{{selectedHero.id|uppercase}}</h2>
+<input [(ngModel)]="selectedHero.name" placeholder="name"/>
+</div>
